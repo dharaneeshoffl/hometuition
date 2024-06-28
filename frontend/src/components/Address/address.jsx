@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import axios from "axios";
 import "./address.css";
 import { useNavigate } from "react-router-dom";
 
@@ -21,17 +20,11 @@ export default function Address() {
     }));
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     if (Object.values(formData).every((field) => field.trim() !== "")) {
-      try {
-        await axios.post("http://localhost:4000/api/address", formData);
-        alert("Address added successfully!");
-        navigate("/welcome");
-      } catch (error) {
-        console.error("Error adding address:", error);
-        alert("Failed to add address.");
-      }
+      alert("Address added successfully!");
+      navigate("/welcome");
     } else {
       alert("Please fill out all fields.");
     }
@@ -51,7 +44,7 @@ export default function Address() {
           onChange={handleChange}
           name="name"
           value={formData.name}
-          required
+          required=''
         />
         <br />
         <br />
@@ -61,7 +54,7 @@ export default function Address() {
           onChange={handleChange}
           name="mobile"
           value={formData.mobile}
-          required
+          required=''
         />
         <br />
         <br />
@@ -71,7 +64,7 @@ export default function Address() {
           onChange={handleChange}
           name="address"
           value={formData.address}
-          required
+          required=''
         />
         <br />
         <br />
@@ -81,7 +74,7 @@ export default function Address() {
           onChange={handleChange}
           name="city"
           value={formData.city}
-          required
+          required=''
         />
         <br />
         <br />
@@ -91,7 +84,7 @@ export default function Address() {
           onChange={handleChange}
           name="state"
           value={formData.state}
-          required
+          required=''
         />
         <br />
         <br />
@@ -101,7 +94,7 @@ export default function Address() {
           onChange={handleChange}
           name="pincode"
           value={formData.pincode}
-          required
+          required=''
         />
         <br />
         <br />
