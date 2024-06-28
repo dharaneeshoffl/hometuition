@@ -1,0 +1,109 @@
+@media(max-width:800px){
+.header {
+  display: flex;
+  width: 390px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #e89b9b;
+  border-bottom: 1px solid #ccc;
+  position: fixed;
+  z-index: 9999;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  
+}
+
+.logo-container h1{
+   font-size: 30px;
+}
+
+.logo {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.company-name {
+  font-size: 24px;
+  color: #333;
+}
+
+.user-icon-container {
+  position: relative;
+}
+
+.user-icon {
+  height: 40px;
+  cursor: pointer;
+  margin-right: 45px;
+}
+
+.main-content {
+  padding: 20px;
+}
+
+.main-content h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 100px;
+}
+
+
+.main-content .teachers-container{
+  margin-bottom: 150px;
+}
+.teachers-container {
+    height: 180px;
+    width: 210px;
+    margin-right: 165px;
+    margin-top: -30px;
+    margin-bottom: 80px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.teacher-card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 40px;
+  align-items: center;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 50px;
+  width: 200px;
+  margin: right 90px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  margin-bottom: 40px;
+}
+
+.teacher-image {
+ height: 120px;
+ width: 150px;
+ border-radius: 10px;
+ margin-bottom: 10px;
+ 
+}
+
+.teachers-container .div1 p{
+  text-align: center;
+  padding: 5px;
+
+  
+}
+.teacher-card .div2 p{
+  text-align: center;
+    padding: 5px;
+    margin-right: 20px;
+}
+
+
+}
